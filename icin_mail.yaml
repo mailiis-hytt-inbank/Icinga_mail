@@ -1,0 +1,7 @@
+config:
+ server:  #mailserver address
+ user:  #user, e.g user@gmail.com
+ password:  #password
+ from:  #sender, e.g  user_from@gmail.com
+ folder:  #folder, where to search for email e.g INBOX
+ words_to_find: [] #words to be found in email, words between "" and separated with commas
