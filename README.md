@@ -14,6 +14,7 @@ How to use
 
 1. Open icin_mail.yaml and fill all necessary fields.
 2. start icin_mail.rb
+
 	Script reads necessary variables from yaml file, that have to be put in before using.
 	Finds all emails sent from given sender and gets email date.
 	Converts all necessary dates to UTC. 
