@@ -1,4 +1,20 @@
-Script reads necessary variables from yaml file, that have to be put in before using.
+Download
+--------
+	https://github.com/mailiish/Icinga_mail
+
+
+Introduction
+------------
+
+Icin_mail.rb  is a script to find out if email has given lines adn if they are correct.
+
+
+How to use
+----------
+
+1. Open icin_mail.yaml and fill all necessary fields.
+2. start icin_mail.rb
+	Script reads necessary variables from yaml file, that have to be put in before using.
 	Finds all emails sent from given sender and gets email date.
 	Converts all necessary dates to UTC. 
 	Checks if email date is between earliest time( date after the email must be arrived ) and latest time ( date before what the email must be arrived). 
