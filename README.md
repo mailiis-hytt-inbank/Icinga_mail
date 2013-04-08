@@ -1,4 +1,4 @@
-Script reads necessary variables from yaml file.
+Script reads necessary variables from yaml file, that have to be put in before using.
 	Finds all emails sent from given sender and gets email date.
 	Converts all necessary dates to UTC. 
 	Checks if email date is between earliest time( date after the email must be arrived ) and latest time ( date before what the email must be arrived). 
