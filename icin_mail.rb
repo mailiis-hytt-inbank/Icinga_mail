@@ -5,7 +5,7 @@ require 'date'
 require 'yaml'
 
 def read_config
-    config = YAML.load_file("icinga_mail_k.yaml")
+    config = YAML.load_file("icin_mail.yaml")
     @server = config["config"]["server"]
     @user = config["config"]["user"]
     @pass = config["config"]["password"]
@@ -33,9 +33,7 @@ def find_in_email()
         envelope = imap.fetch(msg_id, "ENVELOPE")[0].attr["ENVELOPE"]
         @subject = envelope.subject
         @email_date =DateTime.parse(envelope.date)
-        @email_date = Time.new(@email_date.year, @email_date.month, @email_date.day, @email_date.hour, @email_date.min, @email_date.sec, @email_date.zone)
-      
-        
+        @email_date = Time.new(@email_date.year, @email_date.month, @email_date.day, @email_date.hour, @email_date.min, @email_date.sec, @email_date.zone)        
         @email_date = (@email_date.utc).to_s
 
         if(@email_date > earliest_time && @email_date < latest_time)
